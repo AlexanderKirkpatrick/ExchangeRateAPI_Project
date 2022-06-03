@@ -15,3 +15,14 @@ function conversionDisplay(currencyExchanger, convertedAmount) {
   $('#result').show();
 }
 
+function errorDisplay(currencyExchanger) {
+  $('#error').html(`<h3>Something has gone wrong! Error-type: ${currencyExchanger.error}`);
+  $('#result').hide();
+  $('#error').show();
+}
+
+function invalidSelectionDisplay(currencyExchanger) {
+  $('#error').html(`<h3> ${currencyExchanger.targetCurrency} is not a valid selection! Please use ISO 4217 Codes Only!`);
+  $('#result').hide();
+  $('#error').show();
+}
