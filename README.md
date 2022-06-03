@@ -1,4 +1,4 @@
-# _TITLE_
+# _Exchange Rate Api Project_
 
 #### By _**Alexander Kirkpatrick**_
 
@@ -13,7 +13,6 @@
 * Javascript
 * Markdown
 * Node Packet Manager
-* Jest for Test Drive Development
 * Webpack Module Bundler
 * Project dependencies listed in package.json
 
@@ -25,13 +24,13 @@ _._
 
 * _Clone repository from Github and save a copy on own computer_
 
-* _Using GUI or terminal, open cloned project directory (titled 'UPDATE') to view files_
+* _Using GUI or terminal, open cloned project directory (titled 'ExchangeRateAPI_Project') to view files_
 
 * _Using GUI or terminal, open index.html file to view project locally_
 
 * _Stylesheet, image, js file, and readme can also be opened from project home directory_
 
-* _(See Github page for this project](https://alexanderkirkpatrick.github.io/UPDATE/)_
+* _(See Github page for this project](https://alexanderkirkpatrick.github.io/ExchangeRateAPI_Project/)_
 
 ## Known Bugs
 
