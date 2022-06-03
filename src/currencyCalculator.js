@@ -10,7 +10,7 @@ export class CurrencyCalculator {
 
   async getExchangeRate() {
     let rateExchanger = new ExchangeRate();
-    let reponse = await rateExhanger.getExchangeRates(this.baseCurrency);
+    let response = await rateExchanger.getExchangeRates(this.baseCurrency);
 
     if (response.result === "success") {
       this.exchangeRate = response.conversion_rate[this.targetCurrency];
