@@ -1,0 +1,22 @@
+#result, #error {
+  display: none;
+}
+
+select {
+  width: 2em;
+}
+
+body {
+  background-color: rgba(54, 109, 198, 0.201);
+  color: rgb(0, 43, 128);
+}
+
+.jumbotron{
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  justify-content: center;
+}
