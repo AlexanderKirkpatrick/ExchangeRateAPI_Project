@@ -13,7 +13,7 @@ export class CurrencyCalculator {
     let response = await rateExchanger.getExchangeRates(this.baseCurrency);
 
     if (response.result === "success") {
-      this.exchangeRate = response.conversion_rate[this.targetCurrency];
+      this.exchangeRate = response.conversion_rates[this.targetCurrency];
     } else {
       this.error = response["error-type"];
     }
