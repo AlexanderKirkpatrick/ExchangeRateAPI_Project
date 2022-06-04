@@ -22,19 +22,21 @@ _._
 
 ## Setup/Installation Requirements
 
-* _Clone repository from Github and save a copy on own computer_
-
-* _Using GUI or terminal, open cloned project directory (titled 'ExchangeRateAPI_Project') to view files_
-
-* _Using GUI or terminal, open index.html file to view project locally_
-
-* _Stylesheet, image, js file, and readme can also be opened from project home directory_
-
-* _(See Github page for this project](https://alexanderkirkpatrick.github.io/ExchangeRateAPI_Project/)_
+_Open via Bash/GitBash;_
+1. Clone this repository onto your computer: https://github.com/AlexanderKirkpatrick/ExchangeRateAPI_Project.git
+2. Navigate into the "Currency_rate" directory in Visual Studio Code, or your preferred text editor
+3. In the top level of the program directory create the following file: ".env"
+4. Paste your own API key into the .env file using the following format: API_KEY = [API KEY GOES HERE!] 
+*  To acquire your own API key please go to exchangerate-api.com and sign up for a free account using an email address 
+*  After account creation, sign in and retrieve your unique API key from the Dashboard 
+*  This program WILL NOT FUNCTION without this unique API key
+5. Install the necessary packages with: "npm install"
+6. Build the project with: "npm run build", then open dist/index.html in your browser of choice
+7. Alternatively, open a live development server in your browser with: "npm run start"
 
 ## Known Bugs
 
-* _No known bugs_
+* _No known bugs_  
 
 ## License
 
