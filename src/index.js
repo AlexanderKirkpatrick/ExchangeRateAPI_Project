@@ -8,21 +8,21 @@ function conversionDisplay(currencyCalculator, convertedAmount) {
   $('.base-currency-display').text(currencyCalculator.baseCurrency);
   $('.base-amount-display').text(currencyCalculator.baseAmount);
   $('.target-currency-display').text(currencyCalculator.targetCurrency);
-  $('.exchange-rate-display').text(currencyCalculator.exchangeRate);
-  $('.converted-currency').text(convertedAmount.toString());
+  $('#exchange-rate-display').text(currencyCalculator.exchangeRate);
+  $('#converted-currency').text(convertedAmount.toString());
 
   $('#error').hide();
   $('#result').show();
 }
 
 function errorDisplay(currencyCalculator) {
-  $('#error').html(`<h3>Something has gone wrong! Error-type: ${currencyCalculator.error}`);
+  $('#error').html(`<h4>Something has gone wrong! Error-type: ${currencyCalculator.error}`);
   $('#result').hide();
   $('#error').show();
 }
 
 function invalidSelectionDisplay(currencyCalculator) {
-  $('#error').html(`<h3> ${currencyCalculator.targetCurrency} is not a valid selection! Please use ISO 4217 Codes Only!`);
+  $('#error').html(`<h4>${currencyCalculator.targetCurrency} is not a valid selection! Please use ISO 4217 Codes Only!`);
   $('#result').hide();
   $('#error').show();
 }
