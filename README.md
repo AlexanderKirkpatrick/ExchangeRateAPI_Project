@@ -39,6 +39,11 @@ _Open via Bash/GitBash;_
 
 * _No known bugs_  
 
+
+## GitHub Pages Link
+
+[AlexanderKirkpatrick.github.io/ExchangeRateAPI_Project](https://alexanderkirkpatrick.github.io/ExchangeRateAPI_Project/)
+
 ## License
 
 MIT License
