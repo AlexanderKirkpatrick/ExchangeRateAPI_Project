@@ -2,7 +2,7 @@
 
 #### By _**Alexander Kirkpatrick**_
 
-#### _SHORT DESCRIPTION._
+#### _An application for finding the latest exchange rates of all official ISO 4217 codes._
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@
 
 ## Description
 
-_._
+_This application will return the user's desired currency exchange rates. It will also accept an amount from the user, and return the new amount, using the current exchange rate._
 
 ## Setup/Installation Requirements
 
@@ -30,6 +30,7 @@ _Open via Bash/GitBash;_
 *  To acquire your own API key please go to exchangerate-api.com and sign up for a free account using an email address 
 *  After account creation, sign in and retrieve your unique API key from the Dashboard 
 *  This program WILL NOT FUNCTION without this unique API key
+*  Take care not to publish or share your unique API key
 5. Install the necessary packages with: "npm install"
 6. Build the project with: "npm run build", then open dist/index.html in your browser of choice
 7. Alternatively, open a live development server in your browser with: "npm run start"
