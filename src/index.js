@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import {CurrencyCalculator} from './currencyCalculator';
 
+
+
 function conversionDisplay(currencyCalculator, convertedAmount) {
   $('.base-currency-display').text(currencyCalculator.baseCurrency);
   $('.base-amount-display').text(currencyCalculator.baseAmount);
@@ -15,14 +17,8 @@ function conversionDisplay(currencyCalculator, convertedAmount) {
   $('#result').show();
 }
 
-function errorDisplay(currencyCalculator) {
-  $('#error').html(`<h4>Something has gone wrong! Error-type: ${currencyCalculator.error}`);
-  $('#result').hide();
-  $('#error').show();
-}
-
-function invalidUrlDisplay() {
-  $('#error').html(`<h4>Whoops! There may be an error with your API url or key.`);
+function errorDisplay() {
+  $('#error').html(`<h4>Something has gone wrong! Please make sure to enter correct URL, API key, and up to date 4217 codes!`);
   $('#result').hide();
   $('#error').show();
 }
@@ -44,8 +40,6 @@ $(document).ready(function() {
 
     if (!currencyCalculator.error && convertedAmount) {
       conversionDisplay(currencyCalculator, convertedAmount);
-    } else if (!convertedAmount && !currencyCalculator.error) {
-      invalidUrlDisplay(currencyCalculator);
     } else {
       errorDisplay(currencyCalculator);
     }
