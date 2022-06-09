@@ -21,8 +21,8 @@ function errorDisplay(currencyCalculator) {
   $('#error').show();
 }
 
-function invalidSelectionDisplay(currencyCalculator) {
-  $('#error').html(`<h4>${currencyCalculator.targetCurrency} is not a valid selection! Please use ISO 4217 Codes Only!`);
+function invalidUrlDisplay() {
+  $('#error').html(`<h4>Whoops! There may be an error with your API url or key.`);
   $('#result').hide();
   $('#error').show();
 }
@@ -45,7 +45,7 @@ $(document).ready(function() {
     if (!currencyCalculator.error && convertedAmount) {
       conversionDisplay(currencyCalculator, convertedAmount);
     } else if (!convertedAmount && !currencyCalculator.error) {
-      invalidSelectionDisplay(currencyCalculator);
+      invalidUrlDisplay(currencyCalculator);
     } else {
       errorDisplay(currencyCalculator);
     }
