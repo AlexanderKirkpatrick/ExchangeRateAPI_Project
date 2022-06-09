@@ -1,16 +1,14 @@
 export class ExchangeRate {
-  async getExchangeRates(baseCurrency) {
+  static async getExchangeRates(baseCurrency) {
     try {
-      let response = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${baseCurrency}`);
-      let jsonResponse;
+      const response = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${baseCurrency}`);
       
-      if (response.ok && response.status == 200) {
-        jsonResponse = await response.json();
-        return jsonResponse;
+      if (!response.ok) {
+        throw Error(response.statusText);
       }
-      return await jsonResponse;
-    } catch (error) {
-      return error;
+      return response.json();
+    } catch(error) {
+      return error.message;
     }
   }
 }
@@ -32,4 +30,3 @@ export class ExchangeRate {
 
 
 
-// 
