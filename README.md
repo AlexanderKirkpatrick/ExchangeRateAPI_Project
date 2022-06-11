@@ -32,8 +32,8 @@ _Open via Bash/GitBash;_
 *  This program WILL NOT FUNCTION without this unique API key
 *  Take care not to publish or share your unique API key
 5. Install the necessary packages with: "npm install"
-6. Build the project with: "npm run build", then open dist/index.html in your browser of choice
-7. Alternatively, open a live development server in your browser with: "npm run start"
+6. Build the project with: "npm run build"
+7. Open a live development server in your browser with: "npm run start"
 
 ## Known Bugs
 
