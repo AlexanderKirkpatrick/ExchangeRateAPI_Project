@@ -10,12 +10,12 @@ export class CurrencyCalculator {
 
   async getExchangeRate() {
     
-    let response = await ExchangeRate.getExchangeRates(this.baseCurrency);
+    let response = await ExchangeRate.getExchangeRates(this.baseCurrency, this.targetCurrency);
 
     if (response.result === "success") {
-      this.exchangeRate = response.conversion_rates[this.targetCurrency];
+      this.exchangeRate = response.conversion_rate;
     } else {
-      this.error = response["error-type"];
+      this.error = response;
     }
   }
 }
