@@ -7,9 +7,9 @@ import {CurrencyCalculator} from './currencyCalculator';
 
 
 function conversionDisplay(currencyCalculator, convertedAmount) {
-  $('.base-currency-display').text(currencyCalculator.baseCurrency);
+  $('.base-currency-display').text(currencyCalculator.baseCurrency.toUpperCase());
   $('.base-amount-display').text(currencyCalculator.baseAmount);
-  $('.target-currency-display').text(currencyCalculator.targetCurrency);
+  $('.target-currency-display').text(currencyCalculator.targetCurrency.toUpperCase());
   $('#exchange-rate-display').text(currencyCalculator.exchangeRate);
   $('#converted-currency').text(convertedAmount.toString());
 
@@ -17,8 +17,8 @@ function conversionDisplay(currencyCalculator, convertedAmount) {
   $('#result').show();
 }
 
-function errorDisplay() {
-  $('#error').html(`<h4>Something has gone wrong! Please make sure to enter correct URL, API key, and up to date 4217 codes!`);
+function errorDisplay(error) {
+  $('#error').html(`<h4>Something has gone wrong! Please make sure to enter correct API URL, API key, and  use up to date 4217 codes! Error: ${error.error}`);
   $('#result').hide();
   $('#error').show();
 }
