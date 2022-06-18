@@ -19,8 +19,14 @@
     
     <form id="exchanger">
       <div class="form-group">
-        <label for="base-currency"><h3>Please select your current currency below:</h3></label>
-        <select class="form-control" id="base-currency">
+        <label for="base-currency"><h3>Please enter or select your current currency below:</h3></label>
+        <br>
+        <br>
+        <input type="text" style="text-transform:uppercase" id="base-currency">
+        <br>
+        <br>
+        <!-- <select class="form-control" id="base-currency">
+          <option>Select</option>
           <option>AED</option>
           <option>AFN</option>
           <option>ALL</option>
@@ -183,23 +189,26 @@
           <option>ZMW</option>
           <option>ZWL</option>
           
-        </select>
+        </select> -->
       </div>
-
       <br>
-      <br>
-
       <div class="form-group">
         <label for="base-amount"><h3>Please enter the amount of the currency:</h3></label>
+        <br>
+        <br>
         <input id="base-amount" type="number" min="1" required>
       </div>
-
       <br>
       <br>
-
       <div class="form-group">
         <label for="target-currency"><h3>Please select the currency to which you would like to convert:</h3></label>
-        <select class="form-control" id="target-currency">
+        <br>
+        <br>
+        <input type="text" style="text-transform:uppercase" id="target-currency">
+        <br>
+        <br>
+        <!-- <select class="form-control" id="target-currency">
+          <option>Select</option>
           <option>AED</option>
           <option>AFN</option>
           <option>ALL</option>
@@ -361,7 +370,7 @@
           <option>ZAR</option>
           <option>ZMW</option>
           <option>ZWL</option>
-        </select>
+        </select> -->
       </div>  
 
       <br>
